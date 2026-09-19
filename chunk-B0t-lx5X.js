@@ -1,0 +1,1 @@
+import{a as P,c as j,i as O,l as k,n as D,o as c,r as L,s as h,t as C,u as x}from"./chunk-Co8kLVOQ.js";export{c as PESOS_EMPAREJAMIENTO,h as TAMANO_DE_TERNA,D as UMBRAL_RECOMENDACION,x as VERSION_EMPAREJAMIENTO,k as brechasDeDemanda,L as contextoDeDisponibilidad,P as emparejamiento,j as evidenciaDe,C as explicacionDeTerna,O as factoresDeEmparejamiento};

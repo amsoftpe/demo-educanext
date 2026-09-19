@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Educanext</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // GitHub Pages es un host estatico: una ruta como /demo-educanext/b2c
+      // no existe como fichero y GitHub sirve este 404.html en su lugar. Aqui
+      // se reescribe la URL como query string (?/b2c) y se manda de vuelta
+      // a index.html, donde el script gemelo la decodifica ANTES de que
+      // arranque Angular. El router de la app nunca se entera del salto.
+      //
+      // El 1 es el numero de segmentos del subdirectorio del sitio: para
+      // https://amsoftpe.github.io/demo-educanext/ es "/demo-educanext", uno.
+      // Si el sitio se sirviera desde la raiz de un dominio, seria 0.
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </body>
+</html>

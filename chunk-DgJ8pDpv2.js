@@ -1,0 +1,1 @@
+var e=[{path:``,redirectTo:`ds`,pathMatch:`full`},{path:`ds`,loadChildren:()=>import(`./chunk-B3EVPV2V2.js`).then(t=>t.designSystemRoutes)}];export{e as devRoutes};
