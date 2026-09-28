@@ -1,0 +1,1 @@
+var o={b2c:[`APPLICANT`,`STUDENT`,`GRADUATE`],b2b:[`COMPANY_ADMIN`,`RECRUITER`,`STAFF`]};function b(e){return o.b2c.includes(e)?`b2c`:o.b2b.includes(e)?`b2b`:null}function u(e,r){return o[r].includes(e)}function l(e){return e===`b2c`?`b2b`:`b2c`}function n(e){return e===`STAFF`}export{u as i,l as n,n as r,b as t};

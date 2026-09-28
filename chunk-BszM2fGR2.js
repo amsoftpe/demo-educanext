@@ -1,0 +1,1 @@
+import{fn as ee,x as E}from"./chunk-N7LzgCXl.js";import{vt as S}from"./main-URA6OUGN.js";var i=class t{usuario=E(S);id(a){let r=this.usuario.cuenta(a).companyId;if(r===null)throw new Error(`Esta cuenta no pertenece a ninguna empresa: ${a}`);return r}static ɵfac=function(r){return new(r||t)};static ɵprov=ee({token:t,factory:t.ɵfac,providedIn:`root`})};export{i as t};

@@ -1,0 +1,1 @@
+var o={EN_PLAZO:`neutral`,POR_VENCER:`warning`,VENCIDO:`danger`,RESUELTA:`success`};export{o as t};
